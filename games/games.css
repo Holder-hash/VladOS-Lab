@@ -1,0 +1,214 @@
+body {
+    font-family: "Lato", sans-serif;
+}
+
+/* скрол */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #8a8a8a; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+}
+
+/*Меню навигации*/
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.sidenav .here {
+    color: #f1f1f1;
+}
+.sidenav .here:hover {
+    cursor: default;
+}
+.sidenav img {
+    left: 35px;
+    width: 90px;
+    height: 90px;
+    bottom: 60px;
+    position: absolute;
+    cursor: pointer;
+}
+/*Реклама*/
+.ad {
+    height: 100%;
+    width: 145px;
+    position: fixed;
+    z-index: 1;
+    right: -145px;
+    top: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+
+    border-left: 15px solid #111;
+
+    transition: 1s ease;
+
+    animation: render 5s ease;
+    animation-delay: 1s;
+}
+
+.ad:hover {
+    right: 0;
+}
+
+@keyframes render {
+    0% {
+        right: -145px;
+    }
+    50% {
+        right: 0px;
+    }
+    100% {
+        right: -145px;
+    }
+}
+
+
+.ad p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    text-align: center;
+    padding-top: 370px;
+}
+
+/*Оглавление страницы*/
+h1 {
+    text-align: center;
+    color: white;
+}
+
+
+/*Трейлер*/
+video {
+    margin-left: 250px;
+    position: absolute;
+}
+
+/*Название первой игры*/
+.first-game-name {
+    color: #FF7F50;
+    margin-left: 1160px;
+    margin-top: 113px;
+}
+
+/*Описние первой игры*/
+.first-game-text {
+    color: white;
+    margin-left: 1000px;
+    margin-top: 0px;
+    width: 500px;
+}
+.rofl {
+    color: white;
+    top: 315px;
+    right: 200px;
+    margin-left: 0px;
+    margin-top: 0px;
+    width: 500px;
+    position: absolute;
+    display: none;
+}
+.sys:hover + .rofl {
+    display: block;
+    color: red;
+}
+
+/*Системные требования первой игры*/
+.first-game-min {
+    color: white;
+    margin-left: 980px;
+    margin-top: 0px;
+    width: 500px;
+}
+
+/*Кнопка скачать*/
+.button {
+    background-color: #D3D3D3;
+    border: none;
+    color: black;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 1000px;
+    box-shadow: 0px 5px 10px 0px rgba(166, 166, 166, 1);
+}
+.button:hover {
+    background: #C0C0C0;
+}
+.button a {
+    color: black;
+    text-decoration: none;
+}
+
+.safely {
+    color: green;
+    left: 1190px;
+    bottom: 419px;
+    margin: 0px;
+    font-size: 15px;
+    position: absolute;
+}
+.safelyIMG {
+    width: 25px;
+    height: 30px;
+    position: absolute;
+    left: 1160px;
+    bottom: 413px;
+    margin: 0px;
+}
+
+/*Будущие проекты...*/
+hr {
+    border: none; 
+    background-color: #A9A9A9; /* Цвет линии */
+    height: 1px;
+    opacity: 0.8;
+}
+
+.soon {
+    text-align: center;
+    color: #A9A9A9;
+    font-size: 19px;
+    font-style: italic;
+    opacity: 0.3;
+}

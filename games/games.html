@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="games.css">
+	<title>VladOS LaB</title>
+
+	<!-- Скрипт смены нижней картинки анонимуоса !-->
+	<script type="text/javascript">
+
+	function myFunc(){
+	event.target.src="../anon.png"
+	document.getElementsByClassName('V')[0].style="cursor: default";
+	}
+
+	var one_call = false;
+ 
+	function onetime(){
+		if (one_call == false){
+			alert('ВНИМАНИЕ! При попытке скачать файл - скорее всего потребуется несколько нажатий на кнопку "Download".\nПриношу свои извинения за свою кривую верстку :(\n\nНадеюсь, у вас он скачается с первого раза.');
+		}
+		one_call = true;
+	}
+
+  </script>
+
+</head>
+<body>
+
+<body bgcolor="BLACK"> <!-- Фон !-->
+
+<!-- Меню навигации и рекламы !-->
+<div class="sidenav">
+  <a href="../index.html">Main</a>
+  <a a class="here">Games</a>
+  <a onclick="alert('Here are the games you can download.')">Info</a>
+	<img src="../anom.png" class="V" onclick="myFunc()">
+</div>
+
+<div class="ad">
+<p>Здесь могла быть ваша реклама</p>
+</div>
+
+
+<!-- Основной контент !-->
+<h1>VladOS store.</h1>
+
+<!-- Первая игра !-->
+
+
+<!-- Трейлер !-->
+<video width="600" height="500" controls="controls" poster="prev.jpg">
+<source src="test.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+</video>
+
+<!-- Оглавление и описание первой игры!-->
+<div class="first-game-name"><h2>The Hot Click</h2></div>
+
+<div class="first-game-text">
+<p>Описание: Игра, в которой вам предстоит выжить!<br>Чтобы не умереть с голода, вам нужно постоянно фармить деньги.<br>Покупайте прокачки  для фарма и перевоплатитесь из бомжа в мажора!</p>
+<p class="sys">Системные требования:</p>
+<p class="rofl">(It's a joke!)</p>
+</div>
+
+<!-- Системные требования !-->
+<div class="first-game-min">
+	<ul>
+		<li>ОС: Windows 7/8/8.1/10/11</li>
+		<li>CPU: Intel Core i7-6700K 4-Core 4.0GHz / AMD Ryzen R5 1600</li>
+		<li>RAM: 16 ГБ</li>
+		<li>GPU: AMD Radeon RX Vega 56 с 8 ГБ видеопамяти / NVIDIA GeForce GTX 1070, совместимая с DirectX 11</li>
+		<li>HDD: 50 ГБ</li>
+	</ul>
+</div>
+
+<!-- Кнопка СКАЧАТЬ-->
+<button class="button" onclick="onetime()"><a href="HotClick.zip"><strong>Download</strong></button></a></button>
+
+<p class="safely">Safely!</p>
+<img src="safety.png" class="safelyIMG">
+</div>
+<br><br><br><br>
+<hr>
+<p class="soon">Future projects...</p>
+
+</body>
+</html>
