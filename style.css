@@ -1,0 +1,170 @@
+#main {
+	color: white;
+	text-align: center;
+}
+
+.consoleImg {
+	margin-left: 250px;
+	border: 1.8px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+	position: absolute;
+	background-color: black;
+}
+.consoleImg img {
+    transition: 0.5s;
+}
+.consoleImg:hover img {
+    transform: scale(1.1);
+}
+.consoleImg p {
+	color: white;
+	text-align: center;
+	font-weight: bold;
+}
+
+.consoleImg2 {
+    margin-left: 730px;
+    border: 1.8px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: absolute;
+    background-color: black;
+}
+.consoleImg2 img {
+    transition: 0.5s;
+}
+.consoleImg2:hover img {
+    transform: scale(1.1);
+}
+.consoleImg2 p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+.consoleImg3 {
+    margin-left: 1210px;
+    border: 1.8px solid white;
+    border-radius: 25px;
+    overflow: hidden;
+    position: absolute;
+    background-color: black;
+}
+.consoleImg3 img {
+    transition: 0.5s;
+}
+.consoleImg3:hover img {
+    transform: scale(1.1);
+}
+.consoleImg3 p {
+    color: white;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+#other {
+    color: white;
+    text-align: center;
+    padding-top: 380px;
+}
+
+
+#lorem {
+    width: 1000px;
+    height: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#lorem p {
+    color: white;
+}
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+/* скрол */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px white; 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    background: #8a8a8a; 
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: grey; 
+}
+
+.sidenav {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+}
+.sidenav a:hover {
+    color: #f1f1f1;
+    cursor: pointer;
+}
+.sidenav .here {
+    color: #f1f1f1;
+}
+.sidenav .here:hover {
+    cursor: default;
+}
+.sidenav img {
+    left: 35px;
+    width: 90px;
+    height: 90px;
+    bottom: 60px;
+    position: absolute;
+    cursor: pointer;
+}
+
+.ad {
+    height: 100%;
+    width: 160px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+.ad p {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    text-align: center;
+    padding-top: 370px;
+}
+
+#lorem .egg:hover {
+    color: red;
+    cursor: pointer;
+}
